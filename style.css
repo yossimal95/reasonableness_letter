@@ -10,7 +10,6 @@
 }
 
 * {
-    user-select: none;
     font-family: DavidLibre, serif;
 }
 
@@ -22,6 +21,7 @@ html, body {
 }
 
 .container {
+    user-select: none;
     height: 100%;
     width: 100%;
     padding-top: 150px;
@@ -69,4 +69,33 @@ table {
 
 td {
     padding: 10px;
-}
+    white-space: nowrap;
+} 
+
+@media only screen and (max-width: 615px) {
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        padding-top: 50px;
+    }
+
+    .paper {
+        width: 98%;
+        padding-bottom: 20px;
+    }
+
+    .first-title, .signing-title {
+        margin-top: 30px;
+    }
+
+    table {
+        margin-top: 20px;
+    }
+
+    td {
+        padding: none;
+        font-size: 14px;
+    }
+  }
