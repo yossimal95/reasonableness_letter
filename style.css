@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "DavidLibre";
+    src: url("./fonts/DavidLibre-Regular.ttf")
+}
+
+:root {
+    --bg-color: silver;
+    --paper-color: white;
+    --paper-border-color: #454545;
+}
+
+* {
+    user-select: none;
+    font-family: DavidLibre, serif;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding-top: 150px;
+    background-color: var(--bg-color);
+}
+
+.paper {
+    margin: auto;
+    width: 600px;
+    background-color: var(--paper-color);
+    border: 0.5px solid var(--paper-border-color);
+    padding-bottom: 30px;
+}
+
+.first-title {
+    margin-top: 80px;
+    font-size: 18px;
+    direction: rtl;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.text {
+    font-size: 17px;
+    margin-top: 30px;
+    direction: rtl;
+    text-align: center;
+}
+
+.signing-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 80px;    
+    direction: rtl;
+    text-align: center;
+}
+
+table {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    direction: rtl;
+}
+
+td {
+    padding: 10px;
+}
